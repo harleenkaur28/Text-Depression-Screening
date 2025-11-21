@@ -58,12 +58,12 @@ function DemographicsContent() {
 									{["1st", "2nd", "3rd", "4th", "5th+"].map((year) => (
 										<Label
 											key={year}
-											className="flex items-center gap-4 rounded-lg border border-solid border-gray-300 dark:border-gray-700 p-4 cursor-pointer hover:border-[#137fec] dark:hover:border-[#137fec] transition-colors duration-200 has-[:checked]:border-[#137fec] has-[:checked]:bg-[#137fec]/10 dark:has-[:checked]:bg-[#137fec]/20"
+											className="flex items-start gap-4 rounded-lg border border-solid border-gray-300 dark:border-gray-700 p-4 cursor-pointer hover:border-[#137fec] dark:hover:border-[#137fec] transition-colors duration-200 has-[:checked]:border-[#137fec] has-[:checked]:bg-[#137fec]/10 dark:has-[:checked]:bg-[#137fec]/20"
 										>
 											<RadioGroupItem
 												value={year}
 												id={`year-${year}`}
-												className="text-[#137fec] border-gray-300 dark:border-gray-600"
+												className="text-[#137fec] border-gray-300 dark:border-gray-600 mt-1"
 											/>
 											<span className="text-gray-800 dark:text-gray-200 text-sm font-medium leading-normal">
 												{year}
@@ -89,12 +89,12 @@ function DemographicsContent() {
 									{["Below 18", "18-22", "22-25"].map((age) => (
 										<Label
 											key={age}
-											className="flex items-center gap-4 rounded-lg border border-solid border-gray-300 dark:border-gray-700 p-4 cursor-pointer hover:border-[#137fec] dark:hover:border-[#137fec] transition-colors duration-200 has-[:checked]:border-[#137fec] has-[:checked]:bg-[#137fec]/10 dark:has-[:checked]:bg-[#137fec]/20"
+											className="flex items-start gap-4 rounded-lg border border-solid border-gray-300 dark:border-gray-700 p-4 cursor-pointer hover:border-[#137fec] dark:hover:border-[#137fec] transition-colors duration-200 has-[:checked]:border-[#137fec] has-[:checked]:bg-[#137fec]/10 dark:has-[:checked]:bg-[#137fec]/20"
 										>
 											<RadioGroupItem
 												value={age}
 												id={`age-${age}`}
-												className="text-[#137fec] border-gray-300 dark:border-gray-600"
+												className="text-[#137fec] border-gray-300 dark:border-gray-600 mt-1"
 											/>
 											<span className="text-gray-800 dark:text-gray-200 text-sm font-medium leading-normal">
 												{age}
@@ -117,12 +117,12 @@ function DemographicsContent() {
 									{["Male", "Female", "Prefer not to say"].map((gender) => (
 										<Label
 											key={gender}
-											className="flex items-center gap-4 rounded-lg border border-solid border-gray-300 dark:border-gray-700 p-4 cursor-pointer hover:border-[#137fec] dark:hover:border-[#137fec] transition-colors duration-200 has-[:checked]:border-[#137fec] has-[:checked]:bg-[#137fec]/10 dark:has-[:checked]:bg-[#137fec]/20"
+											className="flex items-start gap-4 rounded-lg border border-solid border-gray-300 dark:border-gray-700 p-4 cursor-pointer hover:border-[#137fec] dark:hover:border-[#137fec] transition-colors duration-200 has-[:checked]:border-[#137fec] has-[:checked]:bg-[#137fec]/10 dark:has-[:checked]:bg-[#137fec]/20"
 										>
 											<RadioGroupItem
 												value={gender}
 												id={`gender-${gender}`}
-												className="text-[#137fec] border-gray-300 dark:border-gray-600"
+												className="text-[#137fec] border-gray-300 dark:border-gray-600 mt-1"
 											/>
 											<span className="text-gray-800 dark:text-gray-200 text-sm font-medium leading-normal">
 												{gender}
@@ -130,11 +130,11 @@ function DemographicsContent() {
 										</Label>
 									))}
 									<div className="flex flex-col gap-3 rounded-lg border border-solid border-gray-300 dark:border-gray-700 p-4 transition-colors duration-200 has-[:checked]:border-[#137fec] has-[:checked]:bg-[#137fec]/10 dark:has-[:checked]:bg-[#137fec]/20 has-[:focus-within]:border-[#137fec] has-[:focus-within]:bg-[#137fec]/10 dark:has-[:focus-within]:bg-[#137fec]/20">
-										<Label className="flex items-center gap-4 cursor-pointer">
+										<Label className="flex items-start gap-4 cursor-pointer">
 											<RadioGroupItem
 												value="Other"
 												id="gender-other"
-												className="text-[#137fec] border-gray-300 dark:border-gray-600"
+												className="text-[#137fec] border-gray-300 dark:border-gray-600 mt-1"
 											/>
 											<span className="text-gray-800 dark:text-gray-200 text-sm font-medium leading-normal">
 												Other
