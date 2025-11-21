@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { ArrowLeft, Brain } from "lucide-react";
+import Image from "next/image";
+import { ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -9,8 +10,13 @@ export default function ForgotPasswordPage() {
 		<div className="relative flex min-h-screen w-full flex-col items-center justify-center bg-[#f6f7f8] dark:bg-[#101922] text-[#0d141b] dark:text-slate-50 font-sans">
 			<div className="absolute top-0 left-0 w-full px-4 py-5 sm:px-8">
 				<header className="flex items-center justify-start gap-4">
-					<div className="size-6 text-[#137fec]">
-						<Brain className="w-full h-full" />
+					<div className="size-20 relative">
+						<Image
+							src="/logo.png"
+							alt="MindfulAI Logo"
+							fill
+							className="object-contain"
+						/>
 					</div>
 					<h2 className="text-lg font-bold tracking-[-0.015em]">MindfulAI</h2>
 				</header>

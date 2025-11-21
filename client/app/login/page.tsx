@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { Eye, EyeOff, Brain } from "lucide-react";
+import Image from "next/image";
+import { Eye, EyeOff } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -27,7 +28,14 @@ export default function LoginPage() {
 										<div>
 											{/* Logo */}
 											<div className="flex justify-center items-center gap-3 mb-6">
-												<Brain className="w-10 h-10 text-calm-blue" />
+												<div className="relative w-20 h-20">
+													<Image
+														src="/logo.png"
+														alt="MindfulAI Logo"
+														fill
+														className="object-contain"
+													/>
+												</div>
 												<span className="text-2xl font-bold text-neutral-dark-gray dark:text-neutral-off-white">
 													MindfulAI
 												</span>

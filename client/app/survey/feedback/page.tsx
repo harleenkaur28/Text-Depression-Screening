@@ -1,12 +1,6 @@
 import Link from "next/link";
-import {
-	Brain,
-	Users,
-	Flower,
-	GraduationCap,
-	Info,
-	ExternalLink,
-} from "lucide-react";
+import Image from "next/image";
+import { Users, Flower, GraduationCap, Info, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function FeedbackPage() {
@@ -16,8 +10,13 @@ export default function FeedbackPage() {
 			<header className="sticky top-0 z-10 flex items-center justify-center w-full bg-[#f6f7f8]/80 dark:bg-[#101922]/80 backdrop-blur-sm border-b border-slate-200 dark:border-slate-800">
 				<div className="flex items-center justify-between w-full max-w-6xl px-4 py-3">
 					<div className="flex items-center gap-3 text-slate-900 dark:text-white">
-						<div className="size-6 text-[#137fec]">
-							<Brain className="w-full h-full" />
+						<div className="size-20 relative">
+							<Image
+								src="/logo.png"
+								alt="MindfulAI Logo"
+								fill
+								className="object-contain"
+							/>
 						</div>
 						<h2 className="text-lg font-bold leading-tight tracking-[-0.015em]">
 							MindfulAI

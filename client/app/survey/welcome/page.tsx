@@ -1,8 +1,9 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useSearchParams } from "next/navigation";
-import { Lock, Timer, ShieldCheck, Brain } from "lucide-react";
+import { Lock, Timer, ShieldCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function WelcomePage() {
@@ -16,8 +17,13 @@ export default function WelcomePage() {
 					<div className="layout-content-container flex flex-col max-w-[960px] flex-1">
 						<header className="flex items-center justify-between whitespace-nowrap px-10 py-3">
 							<div className="flex items-center gap-4 text-slate-900 dark:text-slate-100">
-								<div className="size-6">
-									<Brain className="w-full h-full" />
+								<div className="size-20 relative">
+									<Image
+										src="/logo.png"
+										alt="MindfulAI Logo"
+										fill
+										className="object-contain"
+									/>
 								</div>
 								<h2 className="text-slate-900 dark:text-slate-100 text-lg font-bold leading-tight tracking-[-0.015em]">
 									MindfulAI
