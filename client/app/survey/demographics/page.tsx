@@ -1,5 +1,6 @@
 "use client";
 
+import { Suspense } from "react";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { ArrowRight } from "lucide-react";
@@ -8,7 +9,7 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 
-export default function DemographicsPage() {
+function DemographicsContent() {
 	const searchParams = useSearchParams();
 	const format = searchParams.get("format") || "mcq";
 
@@ -161,5 +162,13 @@ export default function DemographicsPage() {
 				</div>
 			</div>
 		</div>
+	);
+}
+
+export default function DemographicsPage() {
+	return (
+		<Suspense fallback={<div>Loading...</div>}>
+			<DemographicsContent />
+		</Suspense>
 	);
 }
