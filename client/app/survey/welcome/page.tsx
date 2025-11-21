@@ -1,12 +1,13 @@
 "use client";
 
+import { Suspense } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useSearchParams } from "next/navigation";
 import { Lock, Timer, ShieldCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-export default function WelcomePage() {
+function WelcomeContent() {
 	const searchParams = useSearchParams();
 	const format = searchParams.get("format") || "mcq";
 
@@ -108,5 +109,13 @@ export default function WelcomePage() {
 				</div>
 			</div>
 		</div>
+	);
+}
+
+export default function WelcomePage() {
+	return (
+		<Suspense fallback={<div>Loading...</div>}>
+			<WelcomeContent />
+		</Suspense>
 	);
 }
