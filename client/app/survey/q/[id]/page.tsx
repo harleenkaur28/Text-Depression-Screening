@@ -82,7 +82,7 @@ export default function QuestionPage() {
 								{question.options.map((option, index) => (
 									<Label
 										key={index}
-										className={`flex cursor-pointer items-center gap-4 rounded-lg border border-solid p-4 transition-all hover:bg-slate-50 dark:hover:bg-slate-800/50 ${
+										className={`flex cursor-pointer items-start gap-4 rounded-lg border border-solid p-4 transition-all hover:bg-slate-50 dark:hover:bg-slate-800/50 ${
 											selectedOption === option
 												? "border-[#137fec] bg-[#137fec]/10 dark:bg-[#137fec]/20"
 												: "border-slate-200 dark:border-slate-700"
@@ -91,7 +91,7 @@ export default function QuestionPage() {
 										<RadioGroupItem
 											value={option}
 											id={`option-${index}`}
-											className="text-[#137fec] border-slate-300 dark:border-slate-600"
+											className="text-[#137fec] border-slate-300 dark:border-slate-600 mt-1"
 										/>
 										<div className="flex grow flex-col">
 											<p className="text-base font-medium leading-normal text-slate-800 dark:text-slate-200">
