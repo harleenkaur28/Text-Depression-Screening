@@ -41,13 +41,22 @@
 	--radius-md: calc(var(--radius) - 2px);
 	--radius-lg: var(--radius);
 	--radius-xl: calc(var(--radius) + 4px);
-	--color-calm-blue: #74b9ff;
-	--color-muted-teal: #a2d5c6;
+	
+	/* New Sober Theme Colors */
+	--color-sober-green: #81B29A;
+	--color-sober-pink: #F4ACB7;
+	--color-sober-purple: #9D8189;
+	--color-background-light: #F7F9F9;
+	--color-background-dark: #2D2A32;
+	
+	/* Backward compatibility - map old colors to new theme */
+	--color-calm-blue: var(--color-sober-green);
+	--color-muted-teal: var(--color-sober-pink);
+	
+	/* Neutral colors */
 	--color-neutral-off-white: #f8f9fa;
 	--color-neutral-dark-gray: #495057;
 	--color-soft-red: #e57373;
-	--color-background-light: #f6f7f8;
-	--color-background-dark: #101922;
 }
 
 :root {

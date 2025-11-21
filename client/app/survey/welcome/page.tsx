@@ -12,7 +12,7 @@ function WelcomeContent() {
 	const format = searchParams.get("format") || "mcq";
 
 	return (
-		<div className="relative flex h-auto min-h-screen w-full flex-col bg-[#f6f7f8] dark:bg-[#101922] overflow-x-hidden font-sans">
+		<div className="relative flex h-auto min-h-screen w-full flex-col bg-background-light dark:bg-background-dark overflow-x-hidden font-sans">
 			<div className="layout-container flex h-full grow flex-col">
 				<div className="px-4 flex flex-1 justify-center py-5">
 					<div className="layout-content-container flex flex-col max-w-[960px] flex-1">
@@ -98,7 +98,7 @@ function WelcomeContent() {
 										href={`/survey/demographics?format=${format}`}
 										className="w-full max-w-xs"
 									>
-										<Button className="w-full h-12 text-base font-bold bg-[#137fec] hover:bg-[#137fec]/90 text-white rounded-lg">
+										<Button className="w-full h-12 text-base font-bold bg-calm-blue hover:bg-calm-blue/90 text-white rounded-lg">
 											Start Survey
 										</Button>
 									</Link>

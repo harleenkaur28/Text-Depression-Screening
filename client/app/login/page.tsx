@@ -63,7 +63,7 @@ export default function LoginPage() {
 														autoComplete="email"
 														required
 														placeholder="you@university.edu"
-														className="h-14 bg-white dark:bg-gray-800 border-[#dbe0e6] dark:border-gray-600 text-neutral-dark-gray dark:text-white focus-visible:ring-calm-blue/50 focus-visible:border-calm-blue text-base"
+														className="h-14 bg-white dark:bg-gray-800 border-gray-300 dark:border-gray-600 text-neutral-dark-gray dark:text-white focus-visible:ring-calm-blue/50 focus-visible:border-calm-blue text-base"
 													/>
 												</div>
 												<div className="flex flex-col gap-2">
@@ -81,11 +81,11 @@ export default function LoginPage() {
 															autoComplete="current-password"
 															required
 															placeholder="Enter your password"
-															className="h-14 bg-white dark:bg-gray-800 border-[#dbe0e6] dark:border-gray-600 text-neutral-dark-gray dark:text-white focus-visible:ring-calm-blue/50 focus-visible:border-calm-blue text-base pr-12"
+															className="h-14 bg-white dark:bg-gray-800 border-gray-300 dark:border-gray-600 text-neutral-dark-gray dark:text-white focus-visible:ring-calm-blue/50 focus-visible:border-calm-blue text-base pr-12"
 														/>
 														<button
 															type="button"
-															className="absolute inset-y-0 right-0 flex items-center pr-4 text-[#617589] hover:text-calm-blue"
+															className="absolute inset-y-0 right-0 flex items-center pr-4 text-gray-500 hover:text-calm-blue"
 														>
 															<EyeOff className="w-5 h-5" />
 														</button>
