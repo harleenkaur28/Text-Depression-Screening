@@ -43,9 +43,9 @@ export default function QuestionPage() {
 	};
 
 	return (
-		<div className="relative flex min-h-screen w-full flex-col items-center justify-center p-4 sm:p-6 lg:p-8 bg-[#f6f7f8] dark:bg-[#101922] font-sans text-slate-800 dark:text-slate-200">
+		<div className="relative flex min-h-screen w-full flex-col items-center justify-center p-4 sm:p-6 lg:p-8 bg-background-light dark:bg-background-dark font-sans text-slate-800 dark:text-slate-200">
 			<main className="w-full max-w-2xl">
-				<div className="flex flex-col rounded-xl border border-slate-200/80 bg-white dark:border-slate-800/50 dark:bg-[#101922] shadow-sm">
+				<div className="flex flex-col rounded-xl border border-slate-200/80 bg-white dark:border-slate-800/50 dark:bg-background-dark shadow-sm">
 					{/* Progress Bar */}
 					<div className="p-6 md:p-8 border-b border-slate-200/80 dark:border-slate-800/50">
 						<div className="flex flex-col gap-3">
@@ -56,7 +56,7 @@ export default function QuestionPage() {
 							</div>
 							<div className="rounded-full bg-slate-200 dark:bg-slate-700 h-2">
 								<div
-									className="h-2 rounded-full bg-[#137fec]"
+									className="h-2 rounded-full bg-calm-blue"
 									style={{ width: `${progress}%` }}
 								></div>
 							</div>
@@ -84,14 +84,14 @@ export default function QuestionPage() {
 										key={index}
 										className={`flex cursor-pointer items-start gap-4 rounded-lg border border-solid p-4 transition-all hover:bg-slate-50 dark:hover:bg-slate-800/50 ${
 											selectedOption === option
-												? "border-[#137fec] bg-[#137fec]/10 dark:bg-[#137fec]/20"
+												? "border-calm-blue bg-calm-blue/10 dark:bg-calm-blue/20"
 												: "border-slate-200 dark:border-slate-700"
 										}`}
 									>
 										<RadioGroupItem
 											value={option}
 											id={`option-${index}`}
-											className="text-[#137fec] border-slate-300 dark:border-slate-600 mt-1"
+											className="text-calm-blue border-slate-300 dark:border-slate-600 mt-1"
 										/>
 										<div className="flex grow flex-col">
 											<p className="text-base font-medium leading-normal text-slate-800 dark:text-slate-200">
@@ -106,7 +106,7 @@ export default function QuestionPage() {
 								<Label className="flex flex-col min-w-40 flex-1">
 									<Textarea
 										autoFocus
-										className="flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#111418] dark:text-white focus:outline-0 border border-[#dbe0e6] dark:border-gray-600 bg-white dark:bg-[#101922] focus-visible:border-[#137fec] focus-visible:ring-[#137fec]/20 min-h-36 placeholder:text-[#617589] dark:placeholder:text-gray-500 p-[15px] text-base font-normal leading-normal"
+										className="flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-slate-900 dark:text-white focus:outline-0 border border-gray-300 dark:border-gray-600 bg-white dark:bg-background-dark focus-visible:border-calm-blue focus-visible:ring-calm-blue/20 min-h-36 placeholder:text-gray-500 dark:placeholder:text-gray-500 p-[15px] text-base font-normal leading-normal"
 										placeholder="Type your answer here..."
 										value={textAnswer}
 										onChange={(e) => setTextAnswer(e.target.value)}
@@ -130,7 +130,7 @@ export default function QuestionPage() {
 							</Button>
 							<Button
 								onClick={handleNext}
-								className="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-[#137fec] text-white text-base font-bold leading-normal tracking-[0.015em] transition-colors hover:bg-[#137fec]/90"
+								className="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-calm-blue text-white text-base font-bold leading-normal tracking-[0.015em] transition-colors hover:bg-calm-blue/90"
 							>
 								<span className="truncate">Next</span>
 							</Button>

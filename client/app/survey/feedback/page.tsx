@@ -5,9 +5,9 @@ import { Button } from "@/components/ui/button";
 
 export default function FeedbackPage() {
 	return (
-		<div className="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden bg-[#f6f7f8] dark:bg-[#101922] font-sans">
+		<div className="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden bg-background-light dark:bg-background-dark font-sans">
 			{/* TopNavBar Component */}
-			<header className="sticky top-0 z-10 flex items-center justify-center w-full bg-[#f6f7f8]/80 dark:bg-[#101922]/80 backdrop-blur-sm border-b border-slate-200 dark:border-slate-800">
+			<header className="sticky top-0 z-10 flex items-center justify-center w-full bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-b border-slate-200 dark:border-slate-800">
 				<div className="flex items-center justify-between w-full max-w-6xl px-4 py-3">
 					<div className="flex items-center gap-3 text-slate-900 dark:text-white">
 						<div className="size-20 relative">
@@ -25,25 +25,25 @@ export default function FeedbackPage() {
 					<div className="hidden md:flex items-center gap-8">
 						<Link
 							href="#"
-							className="text-slate-700 dark:text-slate-300 hover:text-[#137fec] dark:hover:text-[#137fec] text-sm font-medium leading-normal transition-colors"
+							className="text-slate-700 dark:text-slate-300 hover:text-calm-blue dark:hover:text-calm-blue text-sm font-medium leading-normal transition-colors"
 						>
 							Dashboard
 						</Link>
 						<Link
 							href="#"
-							className="text-slate-700 dark:text-slate-300 hover:text-[#137fec] dark:hover:text-[#137fec] text-sm font-medium leading-normal transition-colors"
+							className="text-slate-700 dark:text-slate-300 hover:text-calm-blue dark:hover:text-calm-blue text-sm font-medium leading-normal transition-colors"
 						>
 							My Surveys
 						</Link>
 						<Link
 							href="#"
-							className="text-slate-700 dark:text-slate-300 hover:text-[#137fec] dark:hover:text-[#137fec] text-sm font-medium leading-normal transition-colors"
+							className="text-slate-700 dark:text-slate-300 hover:text-calm-blue dark:hover:text-calm-blue text-sm font-medium leading-normal transition-colors"
 						>
 							Resources
 						</Link>
 					</div>
 					<div className="flex items-center gap-4">
-						<Button className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#137fec] text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-[#137fec]/90 transition-colors">
+						<Button className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-calm-blue text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-calm-blue/90 transition-colors">
 							<span className="truncate">Log Out</span>
 						</Button>
 						<div
@@ -82,7 +82,7 @@ export default function FeedbackPage() {
 								}}
 							></div>
 							<div className="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-2 p-6">
-								<p className="text-[#137fec] text-sm font-medium leading-normal">
+								<p className="text-calm-blue text-sm font-medium leading-normal">
 									Your Summary
 								</p>
 								<p className="text-slate-900 dark:text-white text-xl font-bold leading-tight tracking-[-0.015em]">
@@ -105,7 +105,7 @@ export default function FeedbackPage() {
 					<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 						<div className="flex flex-col gap-4 rounded-xl p-6 bg-slate-100 dark:bg-slate-800/50">
 							<div className="flex items-center gap-3">
-								<div className="flex items-center justify-center size-10 rounded-full bg-[#137fec]/20 text-[#137fec]">
+								<div className="flex items-center justify-center size-10 rounded-full bg-calm-blue/20 text-calm-blue">
 									<Users className="w-6 h-6" />
 								</div>
 								<p className="text-slate-900 dark:text-white text-lg font-bold leading-normal">
@@ -119,7 +119,7 @@ export default function FeedbackPage() {
 						</div>
 						<div className="flex flex-col gap-4 rounded-xl p-6 bg-slate-100 dark:bg-slate-800/50">
 							<div className="flex items-center gap-3">
-								<div className="flex items-center justify-center size-10 rounded-full bg-[#137fec]/20 text-[#137fec]">
+								<div className="flex items-center justify-center size-10 rounded-full bg-calm-blue/20 text-calm-blue">
 									<Flower className="w-6 h-6" />
 								</div>
 								<p className="text-slate-900 dark:text-white text-lg font-bold leading-normal">
@@ -133,7 +133,7 @@ export default function FeedbackPage() {
 						</div>
 						<div className="flex flex-col gap-4 rounded-xl p-6 bg-slate-100 dark:bg-slate-800/50">
 							<div className="flex items-center gap-3">
-								<div className="flex items-center justify-center size-10 rounded-full bg-[#137fec]/20 text-[#137fec]">
+								<div className="flex items-center justify-center size-10 rounded-full bg-calm-blue/20 text-calm-blue">
 									<GraduationCap className="w-6 h-6" />
 								</div>
 								<p className="text-slate-900 dark:text-white text-lg font-bold leading-normal">
@@ -171,7 +171,7 @@ export default function FeedbackPage() {
 								here are a few places to start. You are not alone.
 							</p>
 							<div className="mt-4">
-								<Button className="flex min-w-[84px] cursor-pointer items-center justify-center gap-2 overflow-hidden rounded-lg h-11 px-6 bg-[#137fec] text-white text-base font-bold leading-normal hover:bg-[#137fec]/90 transition-colors">
+								<Button className="flex min-w-[84px] cursor-pointer items-center justify-center gap-2 overflow-hidden rounded-lg h-11 px-6 bg-calm-blue text-white text-base font-bold leading-normal hover:bg-calm-blue/90 transition-colors">
 									<ExternalLink className="w-5 h-5" />
 									<span className="truncate">Find Support Resources</span>
 								</Button>
@@ -179,7 +179,7 @@ export default function FeedbackPage() {
 						</div>
 						<div className="flex-1 flex flex-col gap-4">
 							<Link href="#" className="group">
-								<p className="font-semibold text-slate-800 dark:text-slate-200 group-hover:text-[#137fec] dark:group-hover:text-[#137fec] transition-colors">
+								<p className="font-semibold text-slate-800 dark:text-slate-200 group-hover:text-calm-blue dark:group-hover:text-calm-blue transition-colors">
 									University Counseling Center
 								</p>
 								<p className="text-sm text-slate-600 dark:text-slate-400">
@@ -188,7 +188,7 @@ export default function FeedbackPage() {
 							</Link>
 							<div className="h-px bg-slate-200 dark:bg-slate-800"></div>
 							<Link href="#" className="group">
-								<p className="font-semibold text-slate-800 dark:text-slate-200 group-hover:text-[#137fec] dark:group-hover:text-[#137fec] transition-colors">
+								<p className="font-semibold text-slate-800 dark:text-slate-200 group-hover:text-calm-blue dark:group-hover:text-calm-blue transition-colors">
 									National Crisis &amp; Suicide Lifeline
 								</p>
 								<p className="text-sm text-slate-600 dark:text-slate-400">
@@ -197,7 +197,7 @@ export default function FeedbackPage() {
 							</Link>
 							<div className="h-px bg-slate-200 dark:bg-slate-800"></div>
 							<Link href="#" className="group">
-								<p className="font-semibold text-slate-800 dark:text-slate-200 group-hover:text-[#137fec] dark:group-hover:text-[#137fec] transition-colors">
+								<p className="font-semibold text-slate-800 dark:text-slate-200 group-hover:text-calm-blue dark:group-hover:text-calm-blue transition-colors">
 									Tips for Managing Student Stress
 								</p>
 								<p className="text-sm text-slate-600 dark:text-slate-400">
