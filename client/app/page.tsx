@@ -6,7 +6,7 @@ export default function Home() {
 	return (
 		<div className="flex min-h-screen flex-col bg-background-light dark:bg-background-dark font-sans">
 			{/* Navigation */}
-			<header className="w-full px-6 py-4 flex justify-between items-center max-w-7xl mx-auto">
+			<header className="w-full px-4 sm:px-6 py-4 flex justify-between items-center max-w-7xl mx-auto">
 				<div className="flex items-center gap-3">
 					<div className="relative w-20 h-20">
 						<Image
@@ -16,7 +16,7 @@ export default function Home() {
 							className="object-contain"
 						/>
 					</div>
-					<span className="text-xl font-bold text-neutral-dark-gray dark:text-neutral-off-white">
+					<span className="hidden sm:block text-xl font-bold text-neutral-dark-gray dark:text-neutral-off-white">
 						MindfulAI
 					</span>
 				</div>
@@ -40,7 +40,7 @@ export default function Home() {
 			{/* Hero Section */}
 			<main className="flex-1 flex flex-col items-center justify-center px-4 text-center max-w-4xl mx-auto gap-8 pb-20">
 				<div className="space-y-6">
-					<h1 className="text-5xl md:text-7xl font-bold tracking-tight text-neutral-dark-gray dark:text-neutral-off-white leading-tight">
+					<h1 className="text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight text-neutral-dark-gray dark:text-neutral-off-white leading-tight">
 						Understanding Your <br />
 						<span className="text-calm-blue">Mental Well-being</span>
 					</h1>

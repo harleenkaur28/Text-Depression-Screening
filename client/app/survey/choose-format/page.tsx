@@ -38,7 +38,7 @@ export default function ChooseFormatPage() {
 								Step 1 of 3: Choose Your Format
 							</p>
 						</div>
-						<h1 className="text-[#333333] dark:text-[#E0F2F1] tracking-tight text-[32px] font-bold leading-tight px-4 text-center pb-3 pt-12">
+						<h1 className="text-[#333333] dark:text-[#E0F2F1] tracking-tight text-2xl sm:text-[32px] font-bold leading-tight px-4 text-center pb-3 pt-12">
 							Choose how you&apos;d like to respond.
 						</h1>
 						<p className="text-[#555555] dark:text-[#B0BEC5] text-base font-normal leading-normal pb-8 pt-1 px-4 text-center">
@@ -50,13 +50,13 @@ export default function ChooseFormatPage() {
 							onValueChange={(value) => setFormat(value as "mcq" | "text")}
 						>
 							<Label
-								className={`flex items-center gap-4 rounded-xl border-2 border-solid p-6 cursor-pointer bg-white dark:bg-[#1A2835] transition-all duration-200 ease-in-out ${
+								className={`flex items-start gap-4 rounded-xl border-2 border-solid p-4 sm:p-6 cursor-pointer bg-white dark:bg-[#1A2835] transition-all duration-200 ease-in-out ${
 									format === "mcq"
 										? "border-[#00796B] bg-[#00796B]/10 dark:bg-[#00796B]/20"
 										: "border-[#CCCCCC] dark:border-[#455A64]"
 								}`}
 							>
-								<List className="w-8 h-8 text-[#00796B]" />
+								<List className="w-6 h-6 sm:w-8 sm:h-8 text-[#00796B] mt-1" />
 								<div className="flex grow flex-col">
 									<p className="text-[#333333] dark:text-[#E0F2F1] text-base font-medium leading-normal">
 										Multiple Choice Questions
@@ -73,13 +73,13 @@ export default function ChooseFormatPage() {
 								/>
 							</Label>
 							<Label
-								className={`flex items-center gap-4 rounded-xl border-2 border-solid p-6 cursor-pointer bg-white dark:bg-[#1A2835] transition-all duration-200 ease-in-out ${
+								className={`flex items-start gap-4 rounded-xl border-2 border-solid p-4 sm:p-6 cursor-pointer bg-white dark:bg-[#1A2835] transition-all duration-200 ease-in-out ${
 									format === "text"
 										? "border-[#00796B] bg-[#00796B]/10 dark:bg-[#00796B]/20"
 										: "border-[#CCCCCC] dark:border-[#455A64]"
 								}`}
 							>
-								<Keyboard className="w-8 h-8 text-[#00796B]" />
+								<Keyboard className="w-6 h-6 sm:w-8 sm:h-8 text-[#00796B] mt-1" />
 								<div className="flex grow flex-col">
 									<p className="text-[#333333] dark:text-[#E0F2F1] text-base font-medium leading-normal">
 										Text Input Responses
@@ -96,7 +96,7 @@ export default function ChooseFormatPage() {
 								/>
 							</Label>
 						</RadioGroup>
-						<div className="flex px-4 py-8 justify-center gap-4">
+						<div className="flex flex-col sm:flex-row px-4 py-8 justify-center gap-4">
 							<Button
 								onClick={() => router.back()}
 								variant="ghost"
