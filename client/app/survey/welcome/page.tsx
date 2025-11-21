@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
-import { Lock, Timer, ShieldCheck, Activity } from "lucide-react";
+import { Lock, Timer, ShieldCheck, Brain } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function WelcomePage() {
@@ -17,10 +17,10 @@ export default function WelcomePage() {
 						<header className="flex items-center justify-between whitespace-nowrap px-10 py-3">
 							<div className="flex items-center gap-4 text-slate-900 dark:text-slate-100">
 								<div className="size-6">
-									<Activity className="w-full h-full" />
+									<Brain className="w-full h-full" />
 								</div>
 								<h2 className="text-slate-900 dark:text-slate-100 text-lg font-bold leading-tight tracking-[-0.015em]">
-									University Health Center
+									MindfulAI
 								</h2>
 							</div>
 						</header>

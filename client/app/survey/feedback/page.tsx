@@ -1,6 +1,6 @@
 import Link from "next/link";
 import {
-	Activity,
+	Brain,
 	Users,
 	Flower,
 	GraduationCap,
@@ -17,10 +17,10 @@ export default function FeedbackPage() {
 				<div className="flex items-center justify-between w-full max-w-6xl px-4 py-3">
 					<div className="flex items-center gap-3 text-slate-900 dark:text-white">
 						<div className="size-6 text-[#137fec]">
-							<Activity className="w-full h-full" />
+							<Brain className="w-full h-full" />
 						</div>
 						<h2 className="text-lg font-bold leading-tight tracking-[-0.015em]">
-							MindfulU
+							MindfulAI
 						</h2>
 					</div>
 					<div className="hidden md:flex items-center gap-8">

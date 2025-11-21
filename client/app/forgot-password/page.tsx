@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowLeft, Flower } from "lucide-react";
+import { ArrowLeft, Brain } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -10,11 +10,9 @@ export default function ForgotPasswordPage() {
 			<div className="absolute top-0 left-0 w-full px-4 py-5 sm:px-8">
 				<header className="flex items-center justify-start gap-4">
 					<div className="size-6 text-[#137fec]">
-						<Flower className="w-full h-full" />
+						<Brain className="w-full h-full" />
 					</div>
-					<h2 className="text-lg font-bold tracking-[-0.015em]">
-						Student Wellness
-					</h2>
+					<h2 className="text-lg font-bold tracking-[-0.015em]">MindfulAI</h2>
 				</header>
 			</div>
 			<div className="w-full max-w-md p-4">
