@@ -11,6 +11,10 @@ export default function ChooseFormatPage() {
 	const router = useRouter();
 	const [format, setFormat] = React.useState<"mcq" | "text" | null>(null);
 
+	React.useEffect(() => {
+		router.push(`/survey/welcome?format=text`);
+	}, [router]);
+
 	const handleContinue = () => {
 		if (format) {
 			router.push(`/survey/welcome?format=${format}`);
